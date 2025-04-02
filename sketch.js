@@ -1,4 +1,3 @@
-
 let carImg;
 let x = 0;
 let speed = 0;
