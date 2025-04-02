@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Stopping Distance Simulator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Year 10 Keys for Life at Wanneroo Secondary College</h1>
+
+  <div class="controls">
+    <label>Speed (km/h): <input type="number" id="speed" value="60" min="30" max="120"></label>
+    <label>Weather:
+      <select id="weather">
+        <option value="dry">Dry</option>
+        <option value="wet">Wet</option>
+        <option value="icy">Icy</option>
+      </select>
+    </label>
+    <label>Surface:
+      <select id="surface">
+        <option value="asphalt">Asphalt</option>
+        <option value="gravel">Gravel</option>
+      </select>
+    </label>
+    <label>Tire Condition:
+      <select id="tires">
+        <option value="new">New</option>
+        <option value="worn">Worn</option>
+      </select>
+    </label>
+    <label>Distraction:
+      <select id="distraction">
+        <option value="1">Normal</option>
+        <option value="1.5">Tired</option>
+        <option value="2">Distracted</option>
+      </select>
+    </label>
+    <br><br>
+    <label>Guess total stopping distance (m): <input type="number" id="guess" /></label>
+    <button onclick="startSimulation()">Simulate</button>
+  </div>
+
+  <div class="results">
+    <p>Thinking Distance: <span id="thinkingOut">0</span> m</p>
+    <p>Braking Distance: <span id="brakingOut">0</span> m</p>
+    <p>Total Stopping Distance: <span id="totalOut">0</span> m</p>
+    <p class="feedback" id="feedback"></p>
+  </div>
+
+  <div id="simulator"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
