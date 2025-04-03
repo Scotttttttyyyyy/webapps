@@ -1,4 +1,3 @@
-
 const climateData = {
   Perth: {
     rcp26: {2020: [1.0, 5, "Occasional heatwaves"], 2050: [1.4, 12, "More frequent heatwaves"], 2100: [1.8, 22, "Severe droughts and bushfires"]},
