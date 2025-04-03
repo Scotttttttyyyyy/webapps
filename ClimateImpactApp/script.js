@@ -9,7 +9,7 @@ const climateData = {
     2070: [1.5, 12, "Extended dry spells"],
     2080: [1.6, 14, "Severe droughts"],
     2090: [1.7, 16, "Fire weather"],
-    2100: [1.8, 17, "Extremely dry years"],
+    2100: [1.8, 17, "Extremely dry years"]
   },
   rcp45: {
     2020: [1.2, 7, "Some heatwaves"],
@@ -20,7 +20,7 @@ const climateData = {
     2070: [1.9, 17, "Extreme fire danger"],
     2080: [2.1, 19, "Widespread drought"],
     2090: [2.2, 21, "Seasonal fires"],
-    2100: [2.4, 23, "Extreme climate stress"],
+    2100: [2.4, 23, "Extreme climate stress"]
   },
   rcp85: {
     2020: [1.5, 10, "Hotter summers"],
@@ -31,7 +31,7 @@ const climateData = {
     2070: [2.8, 28, "Uninhabitable heat days"],
     2080: [3.0, 31, "Systemic drought"],
     2090: [3.2, 34, "Critical water shortage"],
-    2100: [3.5, 38, "Extreme climate emergency"],
+    2100: [3.5, 38, "Extreme climate emergency"]
   },
 },
 "Sydney": {
@@ -44,7 +44,7 @@ const climateData = {
     2070: [1.5, 12, "Occasional flash floods"],
     2080: [1.6, 14, "Strong winds"],
     2090: [1.7, 16, "Increased storm days"],
-    2100: [1.8, 17, "Tropical storm risk"],
+    2100: [1.8, 17, "Tropical storm risk"]
   },
   rcp45: {
     2020: [1.2, 7, "Storms and floods"],
@@ -55,7 +55,7 @@ const climateData = {
     2070: [1.9, 17, "Major flood events"],
     2080: [2.1, 19, "Hail and storm surges"],
     2090: [2.2, 21, "Heat-rain cycles"],
-    2100: [2.4, 23, "Flood infrastructure strain"],
+    2100: [2.4, 23, "Flood infrastructure strain"]
   },
   rcp85: {
     2020: [1.5, 10, "Warming climate"],
@@ -66,7 +66,7 @@ const climateData = {
     2070: [2.8, 28, "Cyclone risk increase"],
     2080: [3.0, 31, "Climate-driven disasters"],
     2090: [3.2, 34, "Evacuation-prone zones"],
-    2100: [3.5, 38, "Frequent storm alerts"],
+    2100: [3.5, 38, "Frequent storm alerts"]
   },
 },
 "New York": {
@@ -79,7 +79,7 @@ const climateData = {
     2070: [1.5, 12, "Increased rain"],
     2080: [1.6, 14, "High tide issues"],
     2090: [1.7, 16, "Flash rain events"],
-    2100: [1.8, 17, "Urban stormwater strain"],
+    2100: [1.8, 17, "Urban stormwater strain"]
   },
   rcp45: {
     2020: [1.2, 7, "Storm surges"],
@@ -90,7 +90,7 @@ const climateData = {
     2070: [1.9, 17, "Infrastructure flooding"],
     2080: [2.1, 19, "Storm shelter use"],
     2090: [2.2, 21, "Tornado likelihood"],
-    2100: [2.4, 23, "Rising tide damage"],
+    2100: [2.4, 23, "Rising tide damage"]
   },
   rcp85: {
     2020: [1.5, 10, "Hotter & wetter"],
@@ -101,7 +101,7 @@ const climateData = {
     2070: [2.8, 28, "Extreme event clustering"],
     2080: [3.0, 31, "Risk of storm surges"],
     2090: [3.2, 34, "Hurricane category ↑"],
-    2100: [3.5, 38, "Crisis preparedness state"],
+    2100: [3.5, 38, "Crisis preparedness state"]
   },
 },
 "London": {
@@ -114,7 +114,7 @@ const climateData = {
     2070: [1.5, 12, "Windy conditions"],
     2080: [1.6, 14, "Low snow"],
     2090: [1.7, 16, "Storm drains strain"],
-    2100: [1.8, 17, "Unpredictable rainfall"],
+    2100: [1.8, 17, "Unpredictable rainfall"]
   },
   rcp45: {
     2020: [1.2, 7, "Rising heat"],
@@ -136,7 +136,7 @@ const climateData = {
     2070: [2.8, 28, "Urban heat storms"],
     2080: [3.0, 31, "Extreme inland rain"],
     2090: [3.2, 34, "Power grid strain"],
-    2100: [3.5, 38, "Flash flood warnings"],
+    2100: [3.5, 38, "Flash flood warnings"]
   },
 },
 "Delhi": {
@@ -149,7 +149,7 @@ const climateData = {
     2070: [1.5, 12, "Less monsoon"],
     2080: [1.6, 14, "Seasonal dust"],
     2090: [1.7, 16, "Water supply stress"],
-    2100: [1.8, 17, "Extreme temperature alerts"],
+    2100: [1.8, 17, "Extreme temperature alerts"]
   },
   rcp45: {
     2020: [1.2, 7, "Dust storms"],
@@ -160,7 +160,7 @@ const climateData = {
     2070: [1.9, 17, "River flow drop"],
     2080: [2.1, 19, "Groundwater depletion"],
     2090: [2.2, 21, "Famine concern"],
-    2100: [2.4, 23, "Heat-dust-haze cycles"],
+    2100: [2.4, 23, "Heat-dust-haze cycles"]
   },
   rcp85: {
     2020: [1.5, 10, "Hotter & drier"],
@@ -171,9 +171,9 @@ const climateData = {
     2070: [2.8, 28, "Climate exodus"],
     2080: [3.0, 31, "Livelihood risk"],
     2090: [3.2, 34, "Heat-health emergency"],
-    2100: [3.5, 38, "Unlivable summers"],
-  },
-}
+    2100: [3.5, 38, "Unlivable summers"]
+  }
+};
 
 function showImpacts() {
   const loc = document.getElementById("location").value;
