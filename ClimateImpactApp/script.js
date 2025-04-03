@@ -31,8 +31,17 @@ function showImpacts() {
   const scn = document.getElementById("scenario").value;
   const yr = document.getElementById("year").value;
 
-  const data = climateData[loc][scn][yr];
-  document.getElementById("temperatureOutput").textContent = `🌡️ Temperature Increase: ${data[0]}°C`;
-  document.getElementById("seaLevelOutput").textContent = `🌊 Sea Level Rise: ${data[1]} cm`;
-  document.getElementById("weatherOutput").textContent = `⛈️ Extreme Weather: ${data[2]}`;
+  const locationData = climateData[loc];
+  const scenarioData = locationData ? locationData[scn] : null;
+  const yearData = scenarioData ? scenarioData[yr] : null;
+
+  if (yearData) {
+    document.getElementById("temperatureOutput").textContent = `🌡️ Temperature Increase: ${yearData[0]}°C`;
+    document.getElementById("seaLevelOutput").textContent = `🌊 Sea Level Rise: ${yearData[1]} cm`;
+    document.getElementById("weatherOutput").textContent = `⛈️ Extreme Weather: ${yearData[2]}`;
+  } else {
+    document.getElementById("temperatureOutput").textContent = "⚠️ Data not available for this combination.";
+    document.getElementById("seaLevelOutput").textContent = "";
+    document.getElementById("weatherOutput").textContent = "";
+  }
 }
