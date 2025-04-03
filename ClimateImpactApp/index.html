@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Climate Change Impact Visualiser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌍 Climate Change Impact Visualiser</h1>
+
+  <div class="controls">
+    <label>Location:
+      <select id="location">
+        <option value="Perth">Perth</option>
+        <option value="Sydney">Sydney</option>
+        <option value="New York">New York</option>
+        <option value="London">London</option>
+        <option value="Delhi">Delhi</option>
+      </select>
+    </label>
+
+    <label>Emission Scenario:
+      <select id="scenario">
+        <option value="rcp26">RCP2.6 (Low)</option>
+        <option value="rcp45">RCP4.5 (Medium)</option>
+        <option value="rcp85">RCP8.5 (High)</option>
+      </select>
+    </label>
+
+    <label>Year:
+      <input type="range" id="year" min="2020" max="2100" step="10" value="2050" oninput="document.getElementById('yearVal').textContent=this.value">
+      <span id="yearVal">2050</span>
+    </label>
+
+    <button onclick="showImpacts()">Visualise</button>
+  </div>
+
+  <div class="output">
+    <h3>Projected Impacts</h3>
+    <p id="temperatureOutput"></p>
+    <p id="seaLevelOutput"></p>
+    <p id="weatherOutput"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

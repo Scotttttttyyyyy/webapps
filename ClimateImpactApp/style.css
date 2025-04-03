@@ -1,0 +1,18 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #eef6f7;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.output {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
