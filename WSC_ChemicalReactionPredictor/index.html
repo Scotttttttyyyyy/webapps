@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WSC Chemical Reaction Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>WSC Chemical Reaction Predictor</h1>
+  <div class="controls">
+    <label>Reactant A:
+      <select id="reactantA">
+        <option value="HCl">HCl</option>
+        <option value="NaOH">NaOH</option>
+        <option value="AgNO3">AgNO₃</option>
+        <option value="NaCl">NaCl</option>
+      </select>
+    </label>
+    <label>Reactant B:
+      <select id="reactantB">
+        <option value="NaOH">NaOH</option>
+        <option value="HCl">HCl</option>
+        <option value="BaCl2">BaCl₂</option>
+        <option value="AgNO3">AgNO₃</option>
+      </select>
+    </label>
+    <label>Temperature:
+      <select id="temperature">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+    <label>Concentration:
+      <select id="concentration">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+    <button onclick="simulateReaction()">Simulate</button>
+  </div>
+
+  <div class="prediction">
+    <h3>Student Prediction</h3>
+    <label>Will this react?
+      <select id="predictReaction">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <br>
+    <label>What products will form?
+      <input type="text" id="predictProducts" placeholder="e.g. NaCl + H₂O" style="width: 200px;">
+    </label>
+    <p id="predictionFeedback"></p>
+  </div>
+  <div class="output">
+    <h3>Reaction Result:</h3>
+    <p id="resultText">Select inputs and click simulate.</p>
+    <p id="balancedEq"></p>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <div id="canvasContainer"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.controls {
+  margin-bottom: 20px;
+}
+select, button {
+  margin: 5px;
+  padding: 5px;
+}
+.output {
+  margin-top: 20px;
+}
