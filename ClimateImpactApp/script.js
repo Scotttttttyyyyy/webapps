@@ -173,7 +173,7 @@ const climateData = {
     2090: [3.2, 34, "Heat-health emergency"],
     2100: [3.5, 38, "Unlivable summers"],
   },
-},
+}
 
 function showImpacts() {
   const loc = document.getElementById("location").value;
