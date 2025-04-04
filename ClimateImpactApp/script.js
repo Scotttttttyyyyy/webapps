@@ -125,7 +125,7 @@ const climateData = {
     2070: [1.9, 17, "Low pressure extremes"],
     2080: [2.1, 19, "Moisture surges"],
     2090: [2.2, 21, "Inland flooding"],
-    2100: [2.4, 23, "Infrastructure soak"],
+    2100: [2.4, 23, "Infrastructure soak"]
   },
   rcp85: {
     2020: [1.5, 10, "Heat waves rise"],
