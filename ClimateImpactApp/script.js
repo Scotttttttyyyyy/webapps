@@ -176,6 +176,7 @@ const climateData = {
 };
 
 function showImpacts() {
+  console.log("Button clicked!");
   const loc = document.getElementById("location").value;
   const scn = document.getElementById("scenario").value;
   const yr = document.getElementById("year").value;
